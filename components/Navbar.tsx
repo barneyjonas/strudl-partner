@@ -60,7 +60,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Dashboard CTA */}
+          {/* Dashboard CTA + hamburger */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <Link href="/dashboard"
               style={{
@@ -69,14 +69,14 @@ export default function Navbar() {
                 background: '#1A1815', color: '#FDFAF5', border: '1px solid #1A1815',
                 transition: 'transform 180ms ease', textDecoration: 'none',
               }}
-              className="hover:-translate-y-px"
+              className="hidden sm:inline-flex hover:-translate-y-px"
             >
               Dashboard →
             </Link>
             {/* Mobile hamburger */}
             <button
               onClick={() => setOpen(!open)}
-              style={{ padding: 8, display: 'none' }}
+              style={{ padding: 8 }}
               className="sm:hidden"
               aria-label="Toggle menu"
             >
@@ -105,6 +105,15 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
+            <Link href="/dashboard" onClick={() => setOpen(false)}
+              style={{
+                marginTop: 8, display: 'inline-flex', alignItems: 'center', gap: 6,
+                borderRadius: 999, padding: '10px 18px', fontWeight: 700, fontSize: '0.9rem',
+                background: '#1A1815', color: '#FDFAF5', border: '1px solid #1A1815',
+                textDecoration: 'none', alignSelf: 'flex-start',
+              }}>
+              Dashboard →
+            </Link>
           </div>
         )}
       </div>
