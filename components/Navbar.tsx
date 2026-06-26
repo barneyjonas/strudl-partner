@@ -64,7 +64,7 @@ export default function Navbar() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <Link href="/dashboard"
               style={{
-                display: 'inline-flex', alignItems: 'center', gap: 6,
+                alignItems: 'center', gap: 6,
                 borderRadius: 999, padding: '10px 18px', fontWeight: 700, fontSize: '0.9rem',
                 background: '#1A1815', color: '#FDFAF5', border: '1px solid #1A1815',
                 transition: 'transform 180ms ease', textDecoration: 'none',
