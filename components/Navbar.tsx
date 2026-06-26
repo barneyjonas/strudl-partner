@@ -35,7 +35,7 @@ export default function Navbar() {
           {/* Brand — icon always, text only on sm+ */}
           <a href="#home" onClick={e => handleNav(e, 'home')}
             style={{ display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', color: '#1A1815', flexShrink: 0 }}>
-            <span style={{ width: 36, height: 36, flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <span style={{ width: 28, height: 28, flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <img src="/strudl-partner/Logo_Strudl_no_Background.svg" alt="Strudl" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
             </span>
             {/* no inline display here — Tailwind controls this */}
